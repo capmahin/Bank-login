@@ -5,10 +5,52 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Banking-Site</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
+    <!-- tailwind -->
   </head>
   <body>
+    <!-- header start -->
     <header>
-      <h1>Banking</h1>
+      <h1 class="text-5xl text-center mt-16">
+        Let Banking
+        <span class="font-semibold text-orange-700">Mooooney </span>!!!
+      </h1>
     </header>
+    <!-- header End -->
+    <!-- main start -->
+    <main>
+      <section class="mt-8">
+        <div class="grid grid-cols-3 gap-4 w-3/4 mx-auto text-white">
+            <div class="bg-blue-300 p-8 rounded">
+                <h3 class="text-2xl">Deposit</h3>
+                <h4 class="text-4xl">$00</h3>
+            </div>
+        
+            <div class="bg-orange-400 p-8 rounded">
+                <h3 class="text-2xl">Withdrew</h3>
+                <h4 class="text-4xl">$00</h3>
+            </div>
+
+           <div class="bg-green-400 p-8 rounded">
+                <h3 class="text-2xl">Balance</h3>
+                <h4 class="text-4xl">$12200</h3>
+            </div>
+        </div>
+      </section>
+    </main>
+    <!-- main End -->
+    <!-- javaScript Sheet -->
+    <script src="js/bank.js"></script>
   </body>
 </html>
